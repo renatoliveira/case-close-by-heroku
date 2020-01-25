@@ -47,6 +47,8 @@ The app can be configured with the following environment variables:
 |SF_ENV|The environment that this is running. The default is `login` and if running with a sandbox, this should be changed to `test` (as in the login URL, `https://[login|test].salesforce.com`)|
 |PORT|The port in which the app will run in production. Heroku has its own value for this variable, so you don't need to do anything with it. By default the server runs on port 8080 when run from a terminal.|
 
+![heroku config vars][heroku_vars]
+
 ### Before running the server
 
 Get your org's credentials (username and password) in a place where you can easily access. When the app is restarted it forgets the tokens and you need to restart the process.
@@ -103,3 +105,4 @@ The Salesforce app should contain the logic used by consumer (the endpoint that 
 [case_update_success]: images/case_update_success.png
 [token_success]: images/token_success.png
 [user_display]: images/user_display.png
+[heroku_vars]: images/heroku_vars.png
