@@ -1,0 +1,6 @@
+[submodule "server"]
+	path = server
+	url = https://github.com/renatoliveira/close-case-heroku-app.git
+[submodule "herokuapp"]
+	path = herokuapp
+	url = https://github.com/renatoliveira/close-case-heroku-app.git
