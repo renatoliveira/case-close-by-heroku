@@ -79,7 +79,7 @@ If one needs/wants the tokens to be displayed, just remove the `del` lines at li
 
 Every time your application is restarted (if you modify the `.py` file or restart the server) the credentials will be lost and you'll need to do the login process once again.
 
-### The "close the case" route ("/<org id>/<record id>")
+### The "close the case" route ("/org id/record id")
 
 For this application the URL to close the cases is defined at line 80 of `server.py`. It receives the org's Id and the case's Id in a similar way the thread ID works for cases in the standard Salesforce application. The org's Id isn't validated, nor the "reason" parameter of the request is used for now. On line 93 there is a string assigned to this attribute as an example if a developer wanted to assign that content to a custom field on the case (in this case, just edit the wrapper class in Apex to add the attribute as needed, and then copying its value to the case record).
 
@@ -93,12 +93,12 @@ The Salesforce app should contain the logic used by consumer (the endpoint that 
 
 # Sources
 
-https://oauthlib.readthedocs.io/en/latest/oauth2/server.html#oauth2-0-provider-flows
-https://medium.com/@darutk/the-simplest-guide-to-oauth-2-0-8c71bd9a15bb
-https://requests-oauthlib.readthedocs.io/en/latest/oauth2_workflow.html#web-application-flow
-https://trailhead.salesforce.com/en/content/learn/projects/build-a-connected-app-for-api-integration/implement-the-oauth-20-web-server-authentication-flow
-https://help.salesforce.com/articleView?id=remoteaccess_oauth_web_server_flow.htm&type=5
-https://flask.palletsprojects.com/en/1.1.x/quickstart/
+* https://oauthlib.readthedocs.io/en/latest/oauth2/server.html#oauth2-0-provider-flows
+* https://medium.com/@darutk/the-simplest-guide-to-oauth-2-0-8c71bd9a15bb
+* https://requests-oauthlib.readthedocs.io/en/latest/oauth2_workflow.html#web-application-flow
+* https://trailhead.salesforce.com/en/content/learn/projects/build-a-connected-app-for-api-integration/implement-the-oauth-20-web-server-authentication-flow
+* https://help.salesforce.com/articleView?id=remoteaccess_oauth_web_server_flow.htm&type=5
+* https://flask.palletsprojects.com/en/1.1.x/quickstart/
 
 [case_update_success]: images/case_update_success.png
 [token_success]: images/token_success.png
